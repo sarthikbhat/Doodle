@@ -132,7 +132,8 @@ nav section {
     line-height: 1em;
     height: 1.5em;
     display: inline-block;
-    display: none;
+    visibility: hidden;
+    transform: translateY(-300%);
 }
 
 .titleBar input[type='text'] {

@@ -8,10 +8,10 @@ export default function Header() {
     const [docname, setDocname] = React.useState('Untitled Document')
     const [starred, setsStarred] = React.useState(false)
     const keyPress = (e) => {
-        var inv = document.querySelector('.titleBar div').offsetWidth;
-        var inp = document.querySelector('input[name="title"]');
-        console.log(inv);
-        inp.style.width = inv + 'px';
+        // var inv = document.querySelector('.titleBar div').offsetWidth;
+        // var inp = document.querySelector('input[name="title"]');
+        // console.log(inv);
+        // inp.style.width = (inv-10) + 'px';
         setDocname(e.target.value)
     }
     const changeColor=()=>{
@@ -24,10 +24,10 @@ export default function Header() {
                     <img src={logo} alt="logo" />
                 </div>
                 <div className="titleBar">
-                    <div>{docname}</div>
                     <input type="text" name="title" value={docname} autoComplete='off' onChange={(e) => { keyPress(e) }} />
                     {starred?<img src={starFilled} alt="star"onClick={changeColor} />:<img src={star} onClick={changeColor} alt="star"/>}
                     <img src={share} alt="share" />
+                    {/* <div>{docname}</div> */}
                 </div>
             </section>
         </nav>
