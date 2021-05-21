@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import logo from '../assets/icon.png'
-import searching from '../assets/search.png'
 
 export default function HomeHeader() {
     const [search, setSearch] = useState('')

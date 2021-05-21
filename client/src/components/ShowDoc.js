@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/icon.png'
 
 export default function ShowDoc() {
     return (
