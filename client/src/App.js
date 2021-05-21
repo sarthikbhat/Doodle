@@ -10,7 +10,8 @@ import Login from './components/Login';
 function App() {
   const [socket, setSocket] = useState();
   useEffect(() => {
-    const s = io('http://localhost:4000')
+    const s = io('https://dooodle.herokuapp.com/')
+    // const s = io('http://localhost:4000')
     setSocket(s)
 
     return () => {
