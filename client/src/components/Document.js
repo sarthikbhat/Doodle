@@ -50,7 +50,7 @@ export default function Document({socket}) {
     wrapper.append(editor)
     const q = new Quill(editor, { theme: 'snow', modules: { toolbar: toolbarOptions } })
     q.disable()
-    q.setText('Please wait while we set up !!')
+//     q.setText('Please wait while we set up !!')
     q.formatLine(4, 4, 'align', 'center'); 
     setQuill(q);
   }, [])
